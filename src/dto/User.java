@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class User extends Account{
 	
+	private static ArrayList<User> users=new ArrayList<User>();
 	private int password;
 	private ArrayList<Contact> contacts=new ArrayList<Contact>();
 	
@@ -51,6 +52,14 @@ public class User extends Account{
 		}
 		
 		return 0;
+	}
+	
+	public void saveContacts() {
+		
+	}
+	
+	public static void saveUsers() {
+		
 	}
 
 }

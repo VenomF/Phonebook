@@ -9,8 +9,8 @@ public class ConnectionManager {
 
 	private static ConnectionManager instance = null;
 	private static final String USERNAME = "root";
-	private static final String PASSWORD = "zmajodbosne12345";
-	private static final String CONN_STRING = "jdbc:mysql://localhost/users";
+	private static final String PASSWORD = "password";
+	private static final String CONN_STRING = "jdbc:mysql://localhost/phonebook";
 
 	private Connection connection = null;
 
@@ -47,8 +47,7 @@ public class ConnectionManager {
 	}
 
 	public void close() {
-		try {
-			System.out.println("Connection closed");
+		try {		
 			connection.close();
 			connection = null;
 		} catch (Exception e) {
