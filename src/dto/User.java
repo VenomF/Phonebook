@@ -13,6 +13,11 @@ public class User extends Account{
 		this.password=password.hashCode();
 	}
 	
+	public User(String name, String surname, int password) {
+		super(name, surname);
+		this.password=password;
+	}
+	
 	public ArrayList<Contact> getContacts(){
 		return this.contacts;
 	}
